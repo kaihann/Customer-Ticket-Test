@@ -1,0 +1,10 @@
+{
+  "name": "connectivity-tester",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "winston": "^3.11.0"
+  }
+}
