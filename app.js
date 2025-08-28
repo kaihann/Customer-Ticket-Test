@@ -144,9 +144,9 @@ async function testAuth0Connectivity() {
     try {
       logger.info('Testing Auth0 IPv4 connectivity');
       const startTime = Date.now();
-      const response = await axios.get('https://himss-digitalradar.eu.auth0.com/.well-known/openid-configuration', {
+      const response = await axios.get('https://google.com', {
         family: 4,
-        timeout: 120000
+        timeout: 5000
       });
       const responseTime = Date.now() - startTime;
 
@@ -168,9 +168,9 @@ async function testAuth0Connectivity() {
     try {
       logger.info('Testing Auth0 IPv6 connectivity');
       const startTime = Date.now();
-      const response = await axios.get('https://himss-digitalradar.eu.auth0.com/.well-known/openid-configuration', {
+      const response = await axios.get('https://google.com', {
         family: 6,
-        timeout: 120000
+        timeout: 5000
       });
       const responseTime = Date.now() - startTime;
 
